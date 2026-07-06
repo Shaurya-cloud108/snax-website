@@ -1,0 +1,46 @@
+name: Update YouTube Stats
+
+# ─── SCHEDULE ────────────────────────────────────────────────────────────────
+# Runs 3× daily at 8:00 AM, 2:00 PM, and 8:00 PM IST
+# (IST = UTC+5:30, so subtract 5:30 for UTC times)
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 08:00 AM IST
+    - cron: '30 8 * * *'   # 02:00 PM IST
+    - cron: '30 14 * * *'  # 08:00 PM IST
+  workflow_dispatch:        # Allow manual trigger from GitHub UI
+
+# ─── PERMISSIONS ─────────────────────────────────────────────────────────────
+permissions:
+  contents: write           # Needed to commit the updated JSON back to the repo
+
+# ─── JOB ─────────────────────────────────────────────────────────────────────
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Run the fetch script (uses the API key stored as a GitHub Secret)
+      - name: Fetch YouTube stats
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/fetch-stats.js
+
+      # 4. Commit and push the updated data file
+      - name: Commit updated data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/channel_data.json
+          git diff --staged --quiet || git commit -m "chore: update YouTube stats [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
