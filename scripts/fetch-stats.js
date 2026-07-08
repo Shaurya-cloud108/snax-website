@@ -14,6 +14,9 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+puppeteer.use(StealthPlugin());
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 const API_KEY = process.env.YOUTUBE_API_KEY; // Set via GitHub Secret or local env
@@ -98,6 +101,51 @@ async function fetchVideoStats(videoIds) {
   return res.items || [];
 }
 
+async function fetchKickFollowers(handle) {
+  let browser;
+  try {
+    browser = await puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    const page = await browser.newPage();
+    console.log(`📡 [kick] Scraping channel: ${handle}`);
+    
+    // Stealth plugin helps bypass basic bot protections
+    await page.goto(`https://kick.com/${handle}`, { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    // Wait a brief moment for dynamic content
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    const followerCount = await page.evaluate(() => {
+      // Look for a number followed by "followers" in the whole body text
+      const bodyText = document.body.innerText;
+      const match = bodyText.match(/([\d,\.]+[kKmM]?)\s*followers/i);
+      if (match) {
+        let numStr = match[1].toLowerCase().replace(/,/g, '');
+        let multiplier = 1;
+        if (numStr.endsWith('k')) { multiplier = 1000; numStr = numStr.slice(0, -1); }
+        if (numStr.endsWith('m')) { multiplier = 1000000; numStr = numStr.slice(0, -1); }
+        return Math.floor(parseFloat(numStr) * multiplier);
+      }
+      return null;
+    });
+
+    if (followerCount !== null) {
+      console.log(`   ✅ kick.com/${handle}: ${followerCount.toLocaleString()} followers`);
+      return followerCount;
+    } else {
+      console.warn(`   ⚠️ Could not parse Kick follower count from DOM for ${handle}.`);
+      return null;
+    }
+  } catch (error) {
+    console.error(`   ❌ Kick scraper error: ${error.message}`);
+    return null;
+  } finally {
+    if (browser) await browser.close();
+  }
+}
+
 // ─── MAIN ──────────────────────────────────────────────────────────────────
 async function main() {
   if (!API_KEY) {
@@ -171,6 +219,32 @@ async function main() {
       }
     })
   );
+
+  // Fetch Kick stats (sequential to avoid blocking or memory limits)
+  const kickFollowers = await fetchKickFollowers('snaxgaming');
+  if (kickFollowers !== null) {
+    result.channels['kick'] = {
+      handle: 'snaxgaming',
+      followers_raw: kickFollowers,
+      followers_formatted: formatCompact(kickFollowers)
+    };
+    result.home_stats.kick_followers_raw = kickFollowers;
+  }
+
+  // Merge with existing data so we don't wipe out stats if one API fails
+  let existingData = {};
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      existingData = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+    } catch(e) {}
+  }
+  
+  if (existingData.channels) {
+    result.channels = { ...existingData.channels, ...result.channels };
+  }
+  if (existingData.home_stats) {
+    result.home_stats = { ...existingData.home_stats, ...result.home_stats };
+  }
 
   // Write output
   const outDir = path.dirname(OUTPUT_FILE);

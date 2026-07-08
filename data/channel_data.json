@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-07T16:43:38.459Z",
-  "fetched_at_ist": "7/7/2026, 10:13:38 pm",
+  "fetched_at": "2026-07-07T19:25:53.954Z",
+  "fetched_at_ist": "8/7/2026, 12:55:53 am",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
@@ -157,12 +157,18 @@
           "views": "56K views"
         }
       ]
+    },
+    "kick": {
+      "handle": "snaxgaming",
+      "followers_raw": 10700,
+      "followers_formatted": "11K+"
     }
   },
   "home_stats": {
     "subs_formatted": "2.39M+",
     "views_formatted": "621.58M+",
     "subs_raw": 2390000,
-    "views_raw": 621584550
+    "views_raw": 621584550,
+    "kick_followers_raw": 10700
   }
 }

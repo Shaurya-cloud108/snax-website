@@ -30,11 +30,13 @@ jobs:
         with:
           node-version: '20'
 
-      # 3. Run the fetch script (uses the API key stored as a GitHub Secret)
-      - name: Fetch YouTube stats
+      # 3. Install dependencies and run the fetch script (uses the API key stored as a GitHub Secret)
+      - name: Fetch stats (YouTube + Kick)
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/fetch-stats.js
+        run: |
+          npm install
+          node scripts/fetch-stats.js
 
       # 4. Commit and push the updated data file
       - name: Commit updated data

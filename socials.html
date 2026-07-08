@@ -49,8 +49,10 @@
         <a href="https://discord.com/invite/snax" target="_blank" class="social-icon" aria-label="Discord"><i
             class="fa-brands fa-discord"></i></a>
         <a href="https://kick.com/snaxgaming" target="_blank" class="social-icon" aria-label="Kick">
-          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="width: 16px; height: 16px;">
-            <path d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z"/>
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            style="width: 16px; height: 16px;">
+            <path
+              d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z" />
           </svg>
         </a>
       </div>
@@ -83,107 +85,157 @@
       <a href="https://discord.com/invite/snax" target="_blank" class="social-icon" aria-label="Discord"><i
           class="fa-brands fa-discord"></i></a>
       <a href="https://kick.com/snaxgaming" target="_blank" class="social-icon" aria-label="Kick">
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="width: 16px; height: 16px;">
-          <path d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z"/>
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          style="width: 16px; height: 16px;">
+          <path
+            d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z" />
         </svg>
       </a>
     </div>
   </div>
 
-  <main style="padding-top: 120px;">
-    <!-- CREATOR NETWORK SECTION -->
+  <main style="padding-top: 80px;">
+    <!-- CREATOR NETWORK DIRECTORY -->
     <section class="section reveal-on-scroll" id="creator-network">
       <div class="container">
-        <h1 class="section-title" style="text-align: center; margin-bottom: 4rem;">Creator Network</h1>
+        <h2 class="section-title text-gradient-green">Creator Network</h2>
 
-        <div class="channels-grid">
-          <!-- Channel 1: Snax Gaming -->
-          <div class="glass-card channel-card" id="chan-gaming">
-            <div class="channel-avatar-wrapper">
-              <img class="channel-avatar" src="Snax img 1.jpg" alt="Snax Gaming Avatar">
-              <span class="channel-badge"><i class="fa-solid fa-play"></i></span>
-            </div>
-            <h3 class="channel-name">Snax Gaming</h3>
-            <span class="channel-subs">2.32M+ Subscribers</span>
-            <p class="channel-desc">The primary arena. Watch tactical BGMI highlights, tips, tournaments, and live
-              streams. This is the home of the DP-28 God.</p>
-            <a href="https://www.youtube.com/@SnaxGaming" target="_blank" class="btn btn-primary"
-              id="btn-chan-gaming">View Channel</a>
+        <!-- Search Bar -->
+        <div class="channel-search-container" style="max-width: 600px; margin: 0 auto 3rem auto;">
+          <div class="search-input-wrapper">
+            <input type="text" class="channel-search-input" placeholder="Snax Channels...">
+            <button class="search-clear-btn" aria-label="Clear Search"><i class="fa-solid fa-xmark"></i></button>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
           </div>
+        </div>
+
+        <div class="channels-directory">
+          <!-- Channel 1: Snax Gaming -->
+          <a href="https://www.youtube.com/@SnaxGaming" target="_blank" class="channel-row-card" id="chan-gaming">
+            <div class="row-avatar">
+              <img src="Snax img 1.jpg" alt="Snax Gaming Avatar">
+            </div>
+            <div class="row-info">
+              <h3 class="row-name">Snax Gaming <i class="fa-solid fa-circle-check verify-badge"></i> <i
+                  class="fa-brands fa-youtube yt-icon"></i></h3>
+              <p class="row-meta">@SnaxGaming &bull; <span class="stat-green">2.39M+ Subscribers</span></p>
+              <p class="row-desc">As you guys know the drill, Like karo, Comment karo aur Subscribe karo.</p>
+            </div>
+            <div class="row-action">
+              <span class="btn-yt-subscribe">View Channel</span>
+            </div>
+          </a>
 
           <!-- Channel 2: Snax Unseen -->
-          <div class="glass-card channel-card" id="chan-unseen">
-            <div class="channel-avatar-wrapper">
-              <!-- Using banner/avatar themed placeholder for variety -->
-              <img class="channel-avatar" src="SNAX Channel Banner.jpg" alt="Snax Unseen Avatar">
-              <span class="channel-badge"><i class="fa-solid fa-video"></i></span>
+          <a href="https://www.youtube.com/@snaxunseen" target="_blank" class="channel-row-card" id="chan-unseen">
+            <div class="row-avatar">
+              <img src="SNAX Channel Banner.jpg" alt="Snax Unseen Avatar">
             </div>
-            <h3 class="channel-name">Snax Unseen</h3>
-            <span class="channel-subs">382K+ Subscribers</span>
-            <p class="channel-desc">Behind the screen. Experience everyday life, vlogs, travel diaries, family moments,
-              and exclusive behind-the-scenes content.</p>
-            <a href="https://www.youtube.com/@snaxunseen" target="_blank" class="btn btn-primary"
-              id="btn-chan-unseen">View Channel</a>
-          </div>
+            <div class="row-info">
+              <h3 class="row-name">Snax Unseen <i class="fa-brands fa-youtube yt-icon"></i></h3>
+              <p class="row-meta">@snaxunseen &bull; <span class="stat-green">382K+ Subscribers</span></p>
+              <p class="row-desc">Snax Gaming is the grind!!
+                Snax Unseen is the life!!
+                Raw moments..exclusive vlogs and stories that never make it to stream!!
+                Subscribe and Stay connected</p>
+            </div>
+            <div class="row-action">
+              <span class="btn-yt-subscribe">View Channel</span>
+            </div>
+          </a>
 
           <!-- Channel 3: Snax Maxx -->
-          <div class="glass-card channel-card" id="chan-maxx">
-            <div class="channel-avatar-wrapper">
-              <img class="channel-avatar"
-                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=150&auto=format&fit=crop"
+          <a href="https://www.youtube.com/@SnaxMaxx" target="_blank" class="channel-row-card" id="chan-maxx">
+            <div class="row-avatar">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=150&auto=format&fit=crop"
                 alt="Snax Maxx Avatar">
-              <span class="channel-badge"><i class="fa-solid fa-gamepad"></i></span>
             </div>
-            <h3 class="channel-name">Snax Maxx</h3>
-            <span class="channel-subs">185K+ Subscribers</span>
-            <p class="channel-desc">Diverse gaming limits. Featuring gameplay logs of Valorant, GTA 5 RP, adventure
-              playthroughs, fitness, and bike test drives.</p>
-            <a href="https://www.youtube.com/@SnaxMaxx" target="_blank" class="btn btn-primary" id="btn-chan-maxx">View
-              Channel</a>
-          </div>
+            <div class="row-info">
+              <h3 class="row-name">Snax Maxx <i class="fa-brands fa-youtube yt-icon"></i></h3>
+              <p class="row-meta">@SnaxMaxx &bull; <span class="stat-green">185K+ Subscribers</span></p>
+              <p class="row-desc">This is SnaxMax–where fitness meets consistency! Watch me break limits, build
+                strength, and share everything from workouts to tips that actually work .Let’s grow stronger together!
+              </p>
+            </div>
+            <div class="row-action">
+              <span class="btn-yt-subscribe">View Channel</span>
+            </div>
+          </a>
+
+          <!-- Channel 4: Kick -->
+          <a href="https://kick.com/snaxgaming" target="_blank" class="channel-row-card" id="chan-kick">
+            <div class="row-avatar">
+              <img src="Images/Snax 2.webp" alt="Snax Kick Avatar">
+            </div>
+            <div class="row-info">
+              <h3 class="row-name">SnaxGaming <svg class="kick-icon-small" role="img" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path
+                    d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z" />
+                </svg></h3>
+              <p class="row-meta">snaxgaming &bull; <span class="stat-green">10K+ Followers</span></p>
+              <p class="row-desc">Unfiltered live streams. Catch the most raw and authentic Snax moments.</p>
+            </div>
+            <div class="row-action">
+              <span class="btn-yt-subscribe">View Channel</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- LIVE COUNT DASHBOARD -->
-    <section class="section reveal-on-scroll" style="background: rgba(255,255,255,0.01);" id="live-analytics">
+    <!-- LIVE ANALYTICS HERO -->
+    <section class="section reveal-on-scroll" id="live-analytics-hero">
       <div class="container">
-        <h2 class="section-title">Live Social Analytics</h2>
+        <div class="hero-title-wrapper" style="text-align: center; margin-bottom: 3rem;">
+          <h2 class="hero-title"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 0.5rem; letter-spacing: -1px;">
+            LIVE ANALYTICS
+          </h2>
+          <div class="live-badge" style="display: inline-flex; font-size: 1rem; padding: 0.5rem 1rem;"><span
+              class="pulse-dot"></span>REAL-TIME DATA</div>
+        </div>
 
         <div class="analytics-dashboard">
           <!-- Card 1: Snax Gaming -->
-          <div class="analytics-card" id="live-card-gaming">
+          <div class="analytics-card theme-youtube" id="live-card-gaming">
             <i class="fa-brands fa-youtube"></i>
             <div class="analytics-value" id="live-gaming-subs">2,320,105</div>
             <div class="analytics-label">Snax Gaming Subs</div>
           </div>
-
           <!-- Card 2: Snax Unseen -->
-          <div class="analytics-card" id="live-card-unseen">
+          <div class="analytics-card theme-youtube" id="live-card-unseen">
             <i class="fa-brands fa-youtube"></i>
             <div class="analytics-value" id="live-unseen-subs">382,410</div>
             <div class="analytics-label">Snax Unseen Subs</div>
           </div>
-
           <!-- Card 3: Snax Maxx -->
-          <div class="analytics-card" id="live-card-maxx">
+          <div class="analytics-card theme-youtube" id="live-card-maxx">
             <i class="fa-brands fa-youtube"></i>
             <div class="analytics-value" id="live-maxx-subs">185,150</div>
             <div class="analytics-label">Snax Maxx Subs</div>
           </div>
-
           <!-- Card 4: Instagram -->
-          <div class="analytics-card" id="live-card-ig">
+          <div class="analytics-card theme-instagram" id="live-card-ig">
             <i class="fa-brands fa-instagram"></i>
             <div class="analytics-value" id="live-instagram-followers">1,304,502</div>
             <div class="analytics-label">Instagram Followers</div>
           </div>
-
           <!-- Card 5: X -->
-          <div class="analytics-card" id="live-card-x">
+          <div class="analytics-card theme-x" id="live-card-x">
             <i class="fa-brands fa-x-twitter"></i>
             <div class="analytics-value" id="live-twitter-followers">29,300</div>
             <div class="analytics-label">X Followers</div>
+          </div>
+          <!-- Card 6: Kick -->
+          <div class="analytics-card theme-kick" id="live-card-kick">
+            <svg class="kick-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor">
+              <path
+                d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z" />
+            </svg>
+            <div class="analytics-value" id="live-kick-followers">5,420</div>
+            <div class="analytics-label">Kick Followers</div>
           </div>
         </div>
       </div>
@@ -227,7 +279,7 @@
       <div class="container">
         <h2 class="section-title">Social Presence</h2>
 
-        <div class="social-presence-grid">
+        <div class="bento-box-grid">
           <!-- Widget 1: Instagram -->
           <div class="glass-card social-widget" id="widget-instagram">
             <div class="widget-header">
@@ -279,7 +331,7 @@
           <div class="glass-card social-widget" id="widget-x">
             <div class="widget-header">
               <div class="widget-profile">
-                <img class="widget-pfp" src="Snax img 1.jpg" alt="Snax Profile Pic">
+                <i class="fa-brands fa-x-twitter" style="font-size: 2.5rem; color: #fff; margin-right: 1rem;"></i>
                 <div class="widget-user">
                   <h4>SnaxGaming</h4>
                   <p>@SnaxGamingg</p>
@@ -290,14 +342,30 @@
                 <div class="label">Followers</div>
               </div>
             </div>
+            <a href="https://x.com/SnaxGamingg" target="_blank" class="btn btn-secondary"
+              style="width: 100%; margin-top: auto;" id="btn-widget-x">Follow on X</a>
+          </div>
 
-            <div class="widget-activity">
-
-              <a href="https://x.com/SnaxGamingg" target="_blank" class="btn btn-secondary"
-                style="width: 100%; margin-top: 1.5rem;" id="btn-widget-x">Follow on X</a>
+          <!-- Widget 3: Discord -->
+          <div class="glass-card social-widget" id="widget-discord">
+            <div class="widget-header">
+              <div class="widget-profile">
+                <i class="fa-brands fa-discord" style="font-size: 2.5rem; color: #5865F2; margin-right: 1rem;"></i>
+                <div class="widget-user">
+                  <h4>SnaxGaming</h4>
+                  <p>Official Discord</p>
+                </div>
+              </div>
+              <div class="widget-stats">
+                <div class="count">61.0K</div>
+                <div class="label">Members</div>
+              </div>
             </div>
+            <a href="https://discord.gg/RXQEmY2UdB" target="_blank" class="btn btn-secondary"
+              style="width: 100%; margin-top: auto;" id="btn-widget-discord">Join on Discord</a>
           </div>
         </div>
+      </div>
     </section>
   </main>
 
@@ -322,12 +390,15 @@
         <a href="https://discord.com/invite/snax" target="_blank" class="footer-social-icon" aria-label="Discord"><i
             class="fa-brands fa-discord"></i></a>
         <a href="https://kick.com/snaxgaming" target="_blank" class="footer-social-icon" aria-label="Kick">
-          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="width: 18px; height: 18px;">
-            <path d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z"/>
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            style="width: 18px; height: 18px;">
+            <path
+              d="M1.333 0h8v5.333H12V2.667h2.667v2.666h2.666V2.667H20V0h2.667v5.333h-2.667v2.667h-2.666V10.67h2.666v2.666h2.667V24H20v-2.667h-2.667v-2.666h-2.666v2.666H12v-2.667H9.333V24h-8V0zm8 8H6.667v8H9.333v-2.667H12v2.667h2.667v-2.667h-2.667V10.67H12V8h-2.667v2.667H9.333V8z" />
           </svg>
         </a>
       </div>
-      <p class="footer-copyright">&copy; 2026 SNAX Gaming. All Rights Reserved. <br>Built By <strong>Shaurya Nikam.</strong>
+      <p class="footer-copyright">&copy; 2026 SNAX Gaming. All Rights Reserved. <br>Built By <strong>Shaurya
+          Nikam.</strong>
       </p>
     </div>
   </footer>

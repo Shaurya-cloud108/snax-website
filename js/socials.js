@@ -126,7 +126,8 @@ const LIVE_STATS = {
   unseen_subs: 382410,
   maxx_subs: 185150,
   instagram_followers: 1304502,
-  twitter_followers: 29300
+  twitter_followers: 29300,
+  kick_followers: 5420
 };
 
 
@@ -134,6 +135,23 @@ let liveSimulationInterval = null;
 
 document.addEventListener('DOMContentLoaded', () => {
   initContentTabs();
+
+  // Channel Search Filtering
+  const searchInput = document.querySelector('.channel-search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      document.querySelectorAll('.channel-row-card').forEach(card => {
+        const title = card.querySelector('.row-name').textContent.toLowerCase();
+        const desc = card.querySelector('.row-desc').textContent.toLowerCase();
+        if (title.includes(term) || desc.includes(term)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
 
   // Load data from the pre-fetched static JSON file (updated 3x daily by GitHub Actions)
   loadChannelDataFromFile();
@@ -229,6 +247,7 @@ function startLiveAnalyticsSimulation() {
   const elMaxx = document.getElementById('live-maxx-subs');
   const elInstagram = document.getElementById('live-instagram-followers');
   const elTwitter = document.getElementById('live-twitter-followers');
+  const elKick = document.getElementById('live-kick-followers');
 
   if (!elGaming && !elInstagram) return; // Check if we are on the socials page
 
@@ -238,31 +257,36 @@ function startLiveAnalyticsSimulation() {
   // Update loops every few seconds to simulate stream registrations
   liveSimulationInterval = setInterval(() => {
     // Random increment of 1-3 subscribers
-    if (Math.random() > 0.4) {
-      LIVE_STATS.gaming_subs += Math.floor(Math.random() * 3) + 1;
+    if (Math.random() > 0.6) {
+      LIVE_STATS.gaming_subs += Math.floor(Math.random() * 2) + 1;
       updateDisplay(elGaming, LIVE_STATS.gaming_subs);
     }
 
-    if (Math.random() > 0.7) {
-      LIVE_STATS.unseen_subs += Math.floor(Math.random() * 2) + 1;
+    if (Math.random() > 0.8) {
+      LIVE_STATS.unseen_subs += 1;
       updateDisplay(elUnseen, LIVE_STATS.unseen_subs);
     }
 
-    if (Math.random() > 0.8) {
+    if (Math.random() > 0.85) {
       LIVE_STATS.maxx_subs += 1;
       updateDisplay(elMaxx, LIVE_STATS.maxx_subs);
     }
 
-    if (Math.random() > 0.5) {
+    if (Math.random() > 0.7) {
       LIVE_STATS.instagram_followers += Math.floor(Math.random() * 2) + 1;
       updateDisplay(elInstagram, LIVE_STATS.instagram_followers);
     }
 
-    if (Math.random() > 0.85) {
+    if (Math.random() > 0.9) {
       LIVE_STATS.twitter_followers += 1;
       updateDisplay(elTwitter, LIVE_STATS.twitter_followers);
     }
-  }, 6000); // Trigger check every 6 seconds
+
+    if (Math.random() > 0.88) {
+      LIVE_STATS.kick_followers += 1;
+      updateDisplay(elKick, LIVE_STATS.kick_followers);
+    }
+  }, 12000); // Trigger check every 12 seconds
 }
 
 function formatNumber(num, formatType = 'comma') {
@@ -289,12 +313,14 @@ function updateDashboardNumbers() {
   const elMaxx = document.getElementById('live-maxx-subs');
   const elInstagram = document.getElementById('live-instagram-followers');
   const elTwitter = document.getElementById('live-twitter-followers');
+  const elKick = document.getElementById('live-kick-followers');
 
   updateDisplay(elGaming, LIVE_STATS.gaming_subs);
   updateDisplay(elUnseen, LIVE_STATS.unseen_subs);
   updateDisplay(elMaxx, LIVE_STATS.maxx_subs);
   updateDisplay(elInstagram, LIVE_STATS.instagram_followers);
   updateDisplay(elTwitter, LIVE_STATS.twitter_followers);
+  updateDisplay(elKick, LIVE_STATS.kick_followers);
 }
 
 /* ==========================================
@@ -316,12 +342,14 @@ async function loadChannelDataFromFile() {
       if (key === 'gaming' && ch.subs_raw) LIVE_STATS.gaming_subs = ch.subs_raw;
       if (key === 'unseen' && ch.subs_raw) LIVE_STATS.unseen_subs = ch.subs_raw;
       if (key === 'maxx'   && ch.subs_raw) LIVE_STATS.maxx_subs   = ch.subs_raw;
+      if (key === 'kick'   && ch.followers_raw) LIVE_STATS.kick_followers = ch.followers_raw;
 
       // Update avatar image
       if (ch.avatar) updateAvatar(key, ch.avatar);
 
       // Update subscriber count on channel card
       if (ch.subs_raw) updateSubsOnCard(key, ch.subs_raw);
+      if (ch.followers_raw) updateSubsOnCard(key, ch.followers_raw, 'Followers');
 
       // Populate video grid with real data
       if (ch.videos && ch.videos.length > 0) {
@@ -332,7 +360,22 @@ async function loadChannelDataFromFile() {
       }
     });
 
-    // Refresh dashboard numbers with real base values
+    if (data.fetched_at) {
+      const fetchedTime = new Date(data.fetched_at).getTime();
+      const now = Date.now();
+      // Cap at 8 hours (28800 seconds) so it doesn't run away completely if action fails
+      const elapsedSeconds = Math.min(28800, Math.max(0, (now - fetchedTime) / 1000));
+
+      // Fast-forward simulation based on average growth rates
+      LIVE_STATS.gaming_subs += Math.floor(elapsedSeconds * 0.02);
+      LIVE_STATS.unseen_subs += Math.floor(elapsedSeconds * 0.0075);
+      LIVE_STATS.maxx_subs += Math.floor(elapsedSeconds * 0.0033);
+      LIVE_STATS.instagram_followers += Math.floor(elapsedSeconds * 0.0125);
+      LIVE_STATS.twitter_followers += Math.floor(elapsedSeconds * 0.0025);
+      LIVE_STATS.kick_followers += Math.floor(elapsedSeconds * 0.001);
+    }
+
+    // Refresh dashboard numbers with real base values + simulated fast-forward
     updateDashboardNumbers();
 
     const fetchedAt = data.fetched_at_ist || data.fetched_at || 'unknown';
@@ -347,18 +390,18 @@ async function loadChannelDataFromFile() {
 }
 
 function updateAvatar(channelKey, url) {
-  const avatarEl = document.querySelector(`#chan-${channelKey} .channel-avatar`);
+  const avatarEl = document.querySelector(`#chan-${channelKey} .row-avatar img`);
   if (avatarEl && url) avatarEl.src = url;
 }
 
-function updateSubsOnCard(channelKey, count) {
-  const subsEl = document.querySelector(`#chan-${channelKey} .channel-subs`);
+function updateSubsOnCard(channelKey, count, label = 'Subscribers') {
+  const subsEl = document.querySelector(`#chan-${channelKey} .stat-green`);
   if (!subsEl) return;
   if (count >= 1_000_000) {
-    subsEl.textContent = (count / 1_000_000).toFixed(2) + 'M+ Subscribers';
+    subsEl.textContent = (count / 1_000_000).toFixed(2) + `M+ ${label}`;
   } else if (count >= 1_000) {
-    subsEl.textContent = (count / 1_000).toFixed(0) + 'K+ Subscribers';
+    subsEl.textContent = (count / 1_000).toFixed(0) + `K+ ${label}`;
   } else {
-    subsEl.textContent = count + ' Subscribers';
+    subsEl.textContent = count + ` ${label}`;
   }
 }
