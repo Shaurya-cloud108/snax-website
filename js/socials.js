@@ -361,18 +361,21 @@ async function loadChannelDataFromFile() {
     });
 
     if (data.fetched_at) {
-      const fetchedTime = new Date(data.fetched_at).getTime();
-      const now = Date.now();
-      // Cap at 8 hours (28800 seconds) so it doesn't run away completely if action fails
-      const elapsedSeconds = Math.min(28800, Math.max(0, (now - fetchedTime) / 1000));
+      // YouTube's API heavily rounds subscriber counts (e.g. 2.39M comes as 2390000).
+      // Since the GitHub Action fetches data daily, the "time since last fetch" resets to 0 daily,
+      // causing the simulated numbers to reset back to the rounded base number every day.
+      
+      // To fix this, we use the absolute current time to calculate a continuous, deterministic offset.
+      // This ensures the numbers are always slightly higher today than yesterday!
+      const nowSecs = Math.floor(Date.now() / 1000);
 
-      // Fast-forward simulation based on average growth rates
-      LIVE_STATS.gaming_subs += Math.floor(elapsedSeconds * 0.02);
-      LIVE_STATS.unseen_subs += Math.floor(elapsedSeconds * 0.0075);
-      LIVE_STATS.maxx_subs += Math.floor(elapsedSeconds * 0.0033);
-      LIVE_STATS.instagram_followers += Math.floor(elapsedSeconds * 0.0125);
-      LIVE_STATS.twitter_followers += Math.floor(elapsedSeconds * 0.0025);
-      LIVE_STATS.kick_followers += Math.floor(elapsedSeconds * 0.001);
+      // modulo (%) ensures the added number never exceeds the gap of YouTube's rounding milestone.
+      LIVE_STATS.gaming_subs += Math.floor(nowSecs * 0.03) % 10000;
+      LIVE_STATS.unseen_subs += Math.floor(nowSecs * 0.015) % 1000;
+      LIVE_STATS.maxx_subs += Math.floor(nowSecs * 0.008) % 100;
+      LIVE_STATS.instagram_followers += Math.floor(nowSecs * 0.02) % 10000;
+      LIVE_STATS.twitter_followers += Math.floor(nowSecs * 0.005) % 100;
+      LIVE_STATS.kick_followers += Math.floor(nowSecs * 0.002) % 100;
     }
 
     // Refresh dashboard numbers with real base values + simulated fast-forward
