@@ -15,7 +15,7 @@
   <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!-- Core Design System CSS -->
-  <link rel="stylesheet" href="css/style.css?v=1.7">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
 </head>
 
 <body>
@@ -188,7 +188,7 @@
     <section class="section reveal-on-scroll" id="live-analytics-hero">
       <div class="container">
         <div class="hero-title-wrapper" style="text-align: center; margin-bottom: 3rem;">
-          <h2 class="hero-title"
+          <h2 class="hero-title text-gradient-green"
             style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 0.5rem; letter-spacing: -1px;">
             LIVE ANALYTICS
           </h2>
@@ -238,35 +238,295 @@
             <div class="analytics-label">Kick Followers</div>
           </div>
         </div>
+
+        <!-- ROAD TO 3 MILLION GOAL TRACKER -->
+        <div class="goal-tracker-container reveal-on-scroll">
+          <div class="goal-header">
+            <h3 class="goal-title">ROAD TO 3 MILLION</h3>
+            <div class="goal-stats">
+              <span id="goal-current">2.39M</span> / <span class="goal-target">3M</span>
+            </div>
+          </div>
+          <div class="goal-track">
+            <div class="goal-progress-fill" id="goal-progress-fill"></div>
+            <!-- Checkpoints -->
+            <div class="goal-node" style="left: 0%;">
+              <div class="node-label">2M 🎉</div>
+            </div>
+            <div class="goal-node" style="left: 25%;">
+              <div class="node-label">2.25M</div>
+            </div>
+            <div class="goal-node" style="left: 50%;">
+              <div class="node-label">2.5M</div>
+            </div>
+            <div class="goal-node" style="left: 75%;">
+              <div class="node-label">2.75M</div>
+            </div>
+            <div class="goal-node" style="left: 100%;">
+              <div class="node-label">3M 🏆</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MUST WATCH CINEMATIC BILLBOARD -->
+    <section class="section reveal-on-scroll" id="must-watch">
+      <div class="container">
+        <h2 class="section-title text-gradient-green">Must Watch Content</h2>
+        <div class="must-watch-coverflow-container">
+          <button class="coverflow-btn prev" id="coverflow-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+          <div class="must-watch-coverflow" id="must-watch-coverflow">
+            <!-- Video 1 -->
+            <a href="https://youtu.be/rDoW4uyaCC4" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/rDoW4uyaCC4/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>THE DAY I MET VIRAT KOHLI</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 2 -->
+            <a href="https://youtu.be/EG-PWN25oBQ" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/EG-PWN25oBQ/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>I BOUGHT MY FIRST HOME</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 3 -->
+            <a href="https://www.youtube.com/watch?v=QHIxhCFb7jo&list=PLFOVFYba_k_ziT-ob50vJaCxcuMn7pn2l"
+              target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/QHIxhCFb7jo/maxresdefault.jpg" alt="Series" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">CHALLENGE VIDEOS</span>
+                  <h3>FEAR ENDS HERE ALL EP PLAYLIST </h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 4 -->
+            <a href="https://www.youtube.com/watch?v=XjV7dVdzBMQ&list=PLFOVFYba_k_wiIQaVudvtlmMnJWOJ_ldY"
+              target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/XjV7dVdzBMQ/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">LEO SERIES</span>
+                  <h3>EXPLORING W/ LEO PLAYLIST</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 5 -->
+            <a href="https://youtube.com/playlist?list=PLFOVFYba_k_wUu96YaYHjStxGOE6ao0fm" target="_blank"
+              class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/VZ780yqUYrE/maxresdefault.jpg" alt="Series" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">ALPHA SERIES</span>
+                  <h3>OFFROADING W/ ALPHA PLAYLIST</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 6 -->
+            <a href="https://youtu.be/DKEd_F0D4aQ" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/DKEd_F0D4aQ/maxresdefault.jpg" alt="Challenge" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">CHALLENGE VIDEO</span>
+                  <h3>SNAX STRUGGLE TO GET 18 WINS IN A ROW! 😱 RECORD FOR RCB!</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 7 -->
+            <a href="https://youtu.be/BYs0319QOyg" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/BYs0319QOyg/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG + CHALLENGE</span>
+                  <h3>A FUN DAY AT S8UL BOOTCAMP : RIDING A SUPERBIKE - VLOG 120</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 8 -->
+            <a href="https://youtu.be/OXHrQNEdS0k" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/OXHrQNEdS0k/maxresdefault.jpg" alt="Challenge" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">CHALLENGE VIDEO</span>
+                  <h3>ULTIMATE FOAM NOODLE BATTLE WITH @S8ULGG</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 9 -->
+            <a href="https://youtu.be/BXqqb6d1AD4" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/BXqqb6d1AD4/maxresdefault.jpg" alt="Challenge" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">CHALLENGE VIDEO</span>
+                  <h3>DIZZY DRAWING CHALLENGE WITH @S8ULGG</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 10 -->
+            <a href="https://youtube.com/playlist?list=PLFOVFYba_k_xpI_xv7_tXf6ux7S1Sl6p0" target="_blank"
+              class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/t3lVVylY0JY/maxresdefault.jpg" alt="Series" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">MEME REACTION</span>
+                  <h3>MEME REACTION PLAYLIST</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 11 -->
+            <a href="https://youtube.com/playlist?list=PLFOVFYba_k_wa4Qgr7YGVa-s6AoNuzSoz" target="_blank"
+              class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/MtEJrNe8NDw/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOGS</span>
+                  <h3>USA TOUR PLAYLIST</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 12 -->
+            <a href="https://youtube.com/playlist?list=PLFOVFYba_k_yrS5457CBncwgVgr3QNr6H" target="_blank"
+              class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/mko0YybrAZs/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOGS</span>
+                  <h3>UK TOUR PLAYLIST</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 13 -->
+            <a href="https://youtu.be/-JGagFFGZrU" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/-JGagFFGZrU/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>RCB VS PBKS : THE NIGHT RCB MADE HISTORY</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 14-->
+            <a href="https://youtu.be/NSULs4KfKCw" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/NSULs4KfKCw/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>RCB VS GT FINAL : WE ARE CHAMPIONS AGAIN</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 15 -->
+            <a href="https://youtu.be/3jMLzfFQ47M" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/3jMLzfFQ47M/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>BOUGHT MY DREAM BIKE😍 - VLOG 53</h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- Video 16 -->
+            <a href="https://youtu.be/bVlCSs3zmrc" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/bVlCSs3zmrc/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">ALPHA</span>
+                  <h3>BIG SURPRISE : MY NEW RIDE IS HERE</h3>
+                </div>
+              </div>
+            </a>
+            <!-- Video 17 -->
+            <a href="https://youtu.be/ZoUZvirOH38" target="_blank" class="mw-card coverflow-item">
+              <img src="https://i.ytimg.com/vi/ZoUZvirOH38/maxresdefault.jpg" alt="Vlog" class="mw-bg">
+              <div class="mw-overlay">
+                <div class="mw-play-btn"><i class="fa-solid fa-play"></i></div>
+                <div class="mw-info">
+                  <span class="mw-badge">VLOG</span>
+                  <h3>UNBOXING MY FIRST BMW BIKE</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <button class="coverflow-btn next" id="coverflow-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
       </div>
     </section>
 
     <!-- CHANNEL CONTENT HUB -->
     <section class="section reveal-on-scroll" id="content-hub">
-      <div class="container">
-        <h2 class="section-title">Channel Content Hub</h2>
+      <!-- Background Dynamic Glow Spot -->
+      <div class="hub-bg-glow" id="hub-bg-glow"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <h2 class="section-title text-gradient-green" style="margin-bottom: 0.5rem;">Channel Content Hub</h2>
+        <p class="section-subtitle" style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 0.95rem;">
+          Explore raw highlights, daily vlogs, and gaming showcases across the Snax channels network, updated live.
+        </p>
 
         <!-- Tab navigation -->
         <div class="content-hub-tabs">
-          <button class="tab-btn active" data-tab="gaming" id="tab-btn-gaming">Snax Gaming</button>
-          <button class="tab-btn" data-tab="unseen" id="tab-btn-unseen">Snax Unseen</button>
-          <button class="tab-btn" data-tab="maxx" id="tab-btn-maxx">Snax Maxx</button>
+          <button class="tab-btn active" data-tab="gaming" id="tab-btn-gaming">
+            Snax Gaming <span class="tab-badge">2.39M</span>
+          </button>
+          <button class="tab-btn" data-tab="unseen" id="tab-btn-unseen">
+            Snax Unseen <span class="tab-badge">382K</span>
+          </button>
+          <button class="tab-btn" data-tab="maxx" id="tab-btn-maxx">
+            Snax Maxx <span class="tab-badge">75K</span>
+          </button>
         </div>
 
         <!-- Tab contents (Grids filled dynamically via socials.js) -->
         <div class="tab-content active" id="gaming-content">
+          <div class="channel-header-wrapper" id="gaming-header-wrapper"></div>
           <div class="video-grid" id="gaming-video-grid">
             <!-- Filled via script -->
           </div>
         </div>
 
         <div class="tab-content" id="unseen-content">
+          <div class="channel-header-wrapper" id="unseen-header-wrapper"></div>
           <div class="video-grid" id="unseen-video-grid">
             <!-- Filled via script -->
           </div>
         </div>
 
         <div class="tab-content" id="maxx-content">
+          <div class="channel-header-wrapper" id="maxx-header-wrapper"></div>
           <div class="video-grid" id="maxx-video-grid">
             <!-- Filled via script -->
           </div>
@@ -274,99 +534,65 @@
       </div>
     </section>
 
-    <!-- SOCIAL PRESENCE WIDGETS -->
-    <section class="section reveal-on-scroll" style="background: rgba(255,255,255,0.01);" id="social-presence">
-      <div class="container">
-        <h2 class="section-title">Social Presence</h2>
+  <!-- MASSIVE S8UL COLLAB WEB SECTION -->
+  <section class="section collab-web-section" id="s8ul-collab-web">
+    <div class="container">
+      <h2 class="section-title text-gradient-green" style="text-align: center; margin-bottom: 0.5rem;">S8UL COLLAB CONSTELLATION</h2>
 
-        <div class="bento-box-grid">
-          <!-- Widget 1: Instagram -->
-          <div class="glass-card social-widget" id="widget-instagram">
-            <div class="widget-header">
-              <div class="widget-profile">
-                <img class="widget-pfp" src="Snax img 1.jpg" alt="Snax Profile Pic">
-                <div class="widget-user">
-                  <h4>snaxgaming</h4>
-                  <p>Mumbai & Hyderabad</p>
-                </div>
-              </div>
-              <div class="widget-stats">
-                <div class="count">1.3M</div>
-                <div class="label">Followers</div>
-              </div>
-            </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3.5rem; max-width: 650px; margin-left: auto; margin-right: auto; font-size: 0.95rem;">
+        Interactive synapse network mapping collaborations, vlogs, and esports tournaments between Snax and the S8UL crew.
+      </p>
 
-            <div class="widget-activity">
-              <!-- Instagram Reel -->
-              <a href="https://www.instagram.com/reel/DJMfMb4oEZA/" target="_blank"
-                style="display: block; text-decoration: none;">
-                <div class="activity-item">
-                  <div class="activity-video-wrapper">
-                    <video class="activity-video" autoplay loop muted playsinline>
-                      <source src="reel.MP4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div class="activity-details">
-                    <div class="activity-meta">
-                      <span><i class="fa-brands fa-instagram"></i> Reel</span>
-                      <span>May 3, 2025</span>
-                    </div>
-                    <p class="activity-content">if you saw the reel..IMAGINE THE REAL! 🏏👑<br><br>#snaxgaming
-                      #viratkohli #inspiration #cricket #idol #kingkohli #reelitfeelit #trending #viral</p>
-                    <div class="activity-engagement">
-                      <span><i class="fa-solid fa-heart"></i> 2.3M</span>
-                      <span><i class="fa-solid fa-comment"></i> 9.5K</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+      <div class="collab-canvas-large">
+        <svg class="collab-svg" width="100%" height="100%" id="collab-svg-container">
+          <defs>
+            <radialGradient id="spoke-glow" cx="50%" cy="50%" r="50%" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="rgba(34, 197, 94, 0.35)" />
+              <stop offset="60%" stop-color="rgba(34, 197, 94, 0.12)" />
+              <stop offset="100%" stop-color="rgba(34, 197, 94, 0)" />
+            </radialGradient>
+            <radialGradient id="spoke-glow-active" cx="50%" cy="50%" r="50%" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="rgba(34, 197, 94, 1)" />
+              <stop offset="70%" stop-color="rgba(34, 197, 94, 0.4)" />
+              <stop offset="100%" stop-color="rgba(34, 197, 94, 0.05)" />
+            </radialGradient>
+          </defs>
+        </svg>
 
-            <a href="https://www.instagram.com/snaxgaming/" target="_blank" class="btn btn-secondary"
-              style="width: 100%; margin-top: 1.5rem;" id="btn-widget-ig">Follow on Instagram</a>
-          </div>
+        <!-- Tooltip -->
+        <div class="collab-tooltip-large" id="collab-tooltip"></div>
 
-          <!-- Widget 2: X (Twitter) -->
-          <div class="glass-card social-widget" id="widget-x">
-            <div class="widget-header">
-              <div class="widget-profile">
-                <i class="fa-brands fa-x-twitter" style="font-size: 2.5rem; color: #fff; margin-right: 1rem;"></i>
-                <div class="widget-user">
-                  <h4>SnaxGaming</h4>
-                  <p>@SnaxGamingg</p>
-                </div>
-              </div>
-              <div class="widget-stats">
-                <div class="count">29.3K</div>
-                <div class="label">Followers</div>
-              </div>
-            </div>
-            <a href="https://x.com/SnaxGamingg" target="_blank" class="btn btn-secondary"
-              style="width: 100%; margin-top: auto;" id="btn-widget-x">Follow on X</a>
-          </div>
+        <!-- Center Node: Snax -->
+        <div class="collab-node-large center-node-large">
+          <img src="Snax img 1.jpg" alt="Snax">
+          <div class="node-pulse pulse-1"></div>
+          <div class="node-pulse pulse-2"></div>
+          <div class="node-pulse pulse-3"></div>
+        </div>
 
-          <!-- Widget 3: Discord -->
-          <div class="glass-card social-widget" id="widget-discord">
-            <div class="widget-header">
-              <div class="widget-profile">
-                <i class="fa-brands fa-discord" style="font-size: 2.5rem; color: #5865F2; margin-right: 1rem;"></i>
-                <div class="widget-user">
-                  <h4>SnaxGaming</h4>
-                  <p>Official Discord</p>
-                </div>
-              </div>
-              <div class="widget-stats">
-                <div class="count">61.0K</div>
-                <div class="label">Members</div>
-              </div>
-            </div>
-            <a href="https://discord.gg/RXQEmY2UdB" target="_blank" class="btn btn-secondary"
-              style="width: 100%; margin-top: auto;" id="btn-widget-discord">Join on Discord</a>
+        <!-- Orbiting Nodes (Generated by JS) -->
+        <div id="collab-nodes-container"></div>
+      </div>
+    </div>
+
+    <!-- Collab Video Modal -->
+    <div class="collab-modal-backdrop" id="collab-modal">
+      <div class="collab-modal-content">
+        <button class="collab-modal-close" id="collab-modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="collab-modal-header">
+          <img src="" alt="" id="collab-modal-img">
+          <div>
+            <h3 id="collab-modal-title">Creator Name</h3>
+            <p class="text-gradient-green">Snax x Creator Collabs</p>
           </div>
         </div>
+        <div class="collab-modal-videos" id="collab-modal-videos">
+          <!-- Videos will be injected here via JS -->
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
+
   </main>
 
   <!-- SHARED FOOTER -->
@@ -406,7 +632,7 @@
 
   <!-- Core Page Scripts -->
   <script src="js/app.js?v=1.3"></script>
-  <script src="js/socials.js?v=1.2"></script>
+  <script src="js/socials.js?v=2.1"></script>
 </body>
 
 </html>
