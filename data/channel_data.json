@@ -1,21 +1,21 @@
 {
-  "fetched_at": "2026-07-10T06:23:47.932Z",
-  "fetched_at_ist": "10/7/2026, 11:53:47 am",
+  "fetched_at": "2026-07-10T11:23:07.522Z",
+  "fetched_at_ist": "10/7/2026, 4:53:07 pm",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 74700,
       "subs_formatted": "75K+",
-      "views_raw": 2191171,
-      "views_formatted": "2.19M+",
+      "views_raw": 2195024,
+      "views_formatted": "2.20M+",
       "videos": [
         {
           "title": "RAW LEG DAY SESSION WITH @Jokerkihavelii",
           "thumbnail": "https://i.ytimg.com/vi/bgV1DbxNiQo/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=bgV1DbxNiQo",
           "date": "2 months ago",
-          "views": "397K views"
+          "views": "398K views"
         },
         {
           "title": "FIRST TRAINING SESSION IN NEW GYM",
@@ -57,8 +57,8 @@
     "unseen": {
       "handle": "@snaxunseen",
       "avatar": "https://yt3.ggpht.com/Z9i0DBBvu-nDgnM1VmzkmSOl92EgJ0oQ3NCFJhxm-wLxo6M3CfbDIKO9bt-CBRM4tVwTGIg81w=s800-c-k-c0x00ffffff-no-rj",
-      "subs_raw": 268000,
-      "subs_formatted": "268K+",
+      "subs_raw": 269000,
+      "subs_formatted": "269K+",
       "views_raw": 108866466,
       "views_formatted": "108.87M+",
       "videos": [
@@ -81,14 +81,14 @@
           "thumbnail": "https://i.ytimg.com/vi/9hnCU74V4V4/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=9hnCU74V4V4",
           "date": "1 week ago",
-          "views": "232K views"
+          "views": "233K views"
         },
         {
           "title": "Snax Disappointed By SouL💔 Reaction On BMPS Champions GodLike",
           "thumbnail": "https://i.ytimg.com/vi/NL9Q5oNXxVk/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=NL9Q5oNXxVk",
           "date": "2 weeks ago",
-          "views": "177K views"
+          "views": "178K views"
         },
         {
           "title": "Snax Reaction On SouL First Chicken in BMPS Finals Day 2!",
@@ -111,15 +111,15 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2390000,
       "subs_formatted": "2.39M+",
-      "views_raw": 624464048,
-      "views_formatted": "624.46M+",
+      "views_raw": 625616948,
+      "views_formatted": "625.62M+",
       "videos": [
         {
           "title": "BGMI LIVE SECOND DAY ON NEW PHONE !insta",
           "thumbnail": "https://i.ytimg.com/vi/SLqcmmVLYPI/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=SLqcmmVLYPI",
-          "date": "18 hours ago",
-          "views": "245K views"
+          "date": "23 hours ago",
+          "views": "247K views"
         },
         {
           "title": "EWC VALORANT GRAND FINALS - WATCHPARTY WITH SNAX !insta",
@@ -147,14 +147,14 @@
           "thumbnail": "https://i.ytimg.com/vi/JQP1iZcbwro/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=JQP1iZcbwro",
           "date": "1 day ago",
-          "views": "987K views"
+          "views": "1.1M views"
         },
         {
           "title": "The Ultimate Escape In Meccha Chameleon",
           "thumbnail": "https://i.ytimg.com/vi/3N_4d8Va5rU/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=3N_4d8Va5rU",
-          "date": "2 days ago",
-          "views": "286K views"
+          "date": "3 days ago",
+          "views": "294K views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.39M+",
-    "views_formatted": "624.46M+",
+    "views_formatted": "625.62M+",
     "subs_raw": 2390000,
-    "views_raw": 624464048,
+    "views_raw": 625616948,
     "kick_followers_raw": 10700
   }
 }
