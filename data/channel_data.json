@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-08-22T08:54:51.048Z",
-  "fetched_at_ist": "22/8/2026, 2:24:51 pm",
+  "fetched_at": "2026-08-22T14:43:28.364Z",
+  "fetched_at_ist": "22/8/2026, 8:13:28 pm",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 76600,
       "subs_formatted": "77K+",
-      "views_raw": 2379563,
+      "views_raw": 2381384,
       "views_formatted": "2.38M+",
       "videos": [
         {
@@ -102,7 +102,7 @@
           "thumbnail": "https://i.ytimg.com/vi/9j-GpVxJeSM/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=9j-GpVxJeSM",
           "date": "1 week ago",
-          "views": "175K views"
+          "views": "176K views"
         }
       ]
     },
@@ -111,50 +111,50 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2620000,
       "subs_formatted": "2.62M+",
-      "views_raw": 757952856,
-      "views_formatted": "757.95M+",
+      "views_raw": 759038540,
+      "views_formatted": "759.04M+",
       "videos": [
+        {
+          "title": "HyperX×NVIDIA VALORANT Showmatch VS Regaltos Ocean SkRossi #HyperXMouse giveaway!#HyperXIndia #RTXON",
+          "thumbnail": "https://i.ytimg.com/vi/wCUG2p2_Au0/hqdefault_live.jpg",
+          "url": "https://www.youtube.com/watch?v=wCUG2p2_Au0",
+          "date": "1 hour ago",
+          "views": "0 views"
+        },
+        {
+          "title": "CS2 at EWC 26 - GRANDFINALS WATCHPARTY WITH SNAX",
+          "thumbnail": "https://i.ytimg.com/vi/Fn9pRx9CO9s/hqdefault_live.jpg",
+          "url": "https://www.youtube.com/watch?v=Fn9pRx9CO9s",
+          "date": "3 hours ago",
+          "views": "0 views"
+        },
         {
           "title": "TWO GANGSTAR IN MIRAGE CITY ft @shreemanlegendliveofficial",
           "thumbnail": "https://i.ytimg.com/vi/l2BWVSkFUG0/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=l2BWVSkFUG0",
-          "date": "14 hours ago",
-          "views": "366K views"
+          "date": "20 hours ago",
+          "views": "375K views"
         },
         {
           "title": "BGMI LIVE WE ARE BACK - !insta #iQOO #iQOOZ11",
           "thumbnail": "https://i.ytimg.com/vi/sYGtNkEHxrY/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=sYGtNkEHxrY",
-          "date": "1 day ago",
-          "views": "462K views"
+          "date": "2 days ago",
+          "views": "464K views"
         },
         {
           "title": "-almost as pretty as you #snaxgaming #paris #eiffeltower",
           "thumbnail": "https://i.ytimg.com/vi/nkZ7eMgm0KY/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=nkZ7eMgm0KY",
-          "date": "3 days ago",
-          "views": "246K views"
+          "date": "4 days ago",
+          "views": "248K views"
         },
         {
           "title": "Every Kids Dream Spot🥹",
           "thumbnail": "https://i.ytimg.com/vi/T-tGlruDCGk/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=T-tGlruDCGk",
-          "date": "3 days ago",
-          "views": "1.9M views"
-        },
-        {
-          "title": "This Is a VALORANT Player’s Dream Laptop! | HyperX OMEN 16 VALORANT Limited Edition",
-          "thumbnail": "https://i.ytimg.com/vi/3WDu6QQQU6E/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=3WDu6QQQU6E",
-          "date": "5 days ago",
-          "views": "84K views"
-        },
-        {
-          "title": "PMWC at EWC GRAND FINALS - WATCHPARTY LIVE FROM PARIS",
-          "thumbnail": "https://i.ytimg.com/vi/9tWj5Xum4u4/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=9tWj5Xum4u4",
-          "date": "5 days ago",
-          "views": "5.8M views"
+          "date": "4 days ago",
+          "views": "2.0M views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.62M+",
-    "views_formatted": "757.95M+",
+    "views_formatted": "759.04M+",
     "subs_raw": 2620000,
-    "views_raw": 757952856,
+    "views_raw": 759038540,
     "kick_followers_raw": 10700
   }
 }
