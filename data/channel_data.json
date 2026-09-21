@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-09-20T17:32:10.507Z",
-  "fetched_at_ist": "20/9/2026, 11:02:10 pm",
+  "fetched_at": "2026-09-21T08:03:48.555Z",
+  "fetched_at_ist": "21/9/2026, 1:33:48 pm",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
-      "subs_raw": 77100,
+      "subs_raw": 77300,
       "subs_formatted": "77K+",
       "views_raw": 2563127,
       "views_formatted": "2.56M+",
@@ -29,7 +29,7 @@
           "thumbnail": "https://i.ytimg.com/vi/iLwIynxZS7Q/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=iLwIynxZS7Q",
           "date": "7 months ago",
-          "views": "598K views"
+          "views": "600K views"
         },
         {
           "title": "WE ARE BACK : SHOULDERS + ARMS DAY",
@@ -57,8 +57,8 @@
     "unseen": {
       "handle": "@snaxunseen",
       "avatar": "https://yt3.ggpht.com/Z9i0DBBvu-nDgnM1VmzkmSOl92EgJ0oQ3NCFJhxm-wLxo6M3CfbDIKO9bt-CBRM4tVwTGIg81w=s800-c-k-c0x00ffffff-no-rj",
-      "subs_raw": 276000,
-      "subs_formatted": "276K+",
+      "subs_raw": 279000,
+      "subs_formatted": "279K+",
       "views_raw": 115839802,
       "views_formatted": "115.84M+",
       "videos": [
@@ -109,52 +109,52 @@
     "gaming": {
       "handle": "@SnaxGaming",
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
-      "subs_raw": 2560000,
-      "subs_formatted": "2.56M+",
+      "subs_raw": 2640000,
+      "subs_formatted": "2.64M+",
       "views_raw": 797645225,
       "views_formatted": "797.65M+",
       "videos": [
         {
+          "title": "Sare Jahan Se Acchha Hindustan Hamara",
+          "thumbnail": "https://i.ytimg.com/vi/pgHQ973AXA0/hqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=pgHQ973AXA0",
+          "date": "3 hours ago",
+          "views": "15K views"
+        },
+        {
           "title": "LADAKH:A DREAM ON TWO WHEELS EPISODE - 3",
           "thumbnail": "https://i.ytimg.com/vi/YjDhhGN6Owo/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=YjDhhGN6Owo",
-          "date": "13 hours ago",
-          "views": "469K views"
+          "date": "1 day ago",
+          "views": "588K views"
         },
         {
           "title": "Men when on road trips🥹",
           "thumbnail": "https://i.ytimg.com/vi/DC2sbzPyg5Q/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=DC2sbzPyg5Q",
-          "date": "1 day ago",
-          "views": "84K views"
+          "date": "2 days ago",
+          "views": "87K views"
         },
         {
           "title": "W Parents♥️",
           "thumbnail": "https://i.ytimg.com/vi/cJWFhZipqZA/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=cJWFhZipqZA",
-          "date": "4 days ago",
-          "views": "143K views"
+          "date": "5 days ago",
+          "views": "150K views"
         },
         {
           "title": "Money Doesn’t Buy Happiness?",
           "thumbnail": "https://i.ytimg.com/vi/RpYtfyzx5wM/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=RpYtfyzx5wM",
-          "date": "5 days ago",
-          "views": "225K views"
+          "date": "6 days ago",
+          "views": "230K views"
         },
         {
           "title": "LADAKH:A DREAM ON TWO WHEELS EPISODE - 2",
           "thumbnail": "https://i.ytimg.com/vi/DxvWm4xLhyw/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=DxvWm4xLhyw",
-          "date": "6 days ago",
-          "views": "1.2M views"
-        },
-        {
-          "title": "Found Mystery Puzzle Box!",
-          "thumbnail": "https://i.ytimg.com/vi/_Zk6CwqNuac/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=_Zk6CwqNuac",
           "date": "1 week ago",
-          "views": "528K views"
+          "views": "1.2M views"
         }
       ]
     },
@@ -165,9 +165,9 @@
     }
   },
   "home_stats": {
-    "subs_formatted": "2.56M+",
+    "subs_formatted": "2.64M+",
     "views_formatted": "797.65M+",
-    "subs_raw": 2560000,
+    "subs_raw": 2640000,
     "views_raw": 797645225,
     "kick_followers_raw": 10700
   }
