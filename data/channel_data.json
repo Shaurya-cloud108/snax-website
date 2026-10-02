@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-10-02T14:50:18.501Z",
-  "fetched_at_ist": "2/10/2026, 8:20:18 pm",
+  "fetched_at": "2026-10-02T19:24:43.488Z",
+  "fetched_at_ist": "3/10/2026, 12:54:43 am",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 77500,
       "subs_formatted": "78K+",
-      "views_raw": 2617874,
+      "views_raw": 2619644,
       "views_formatted": "2.62M+",
       "videos": [
         {
@@ -59,22 +59,22 @@
       "avatar": "https://yt3.ggpht.com/Z9i0DBBvu-nDgnM1VmzkmSOl92EgJ0oQ3NCFJhxm-wLxo6M3CfbDIKO9bt-CBRM4tVwTGIg81w=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 279000,
       "subs_formatted": "279K+",
-      "views_raw": 116599904,
-      "views_formatted": "116.60M+",
+      "views_raw": 116622504,
+      "views_formatted": "116.62M+",
       "videos": [
         {
           "title": "Snax Shocked By World Chat Crate Opening Trick😱 *FUNNY HIGHLIGHT!🤣",
           "thumbnail": "https://i.ytimg.com/vi/ViS9YzXucaI/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=ViS9YzXucaI",
-          "date": "10 hours ago",
-          "views": "60K views"
+          "date": "14 hours ago",
+          "views": "92K views"
         },
         {
           "title": "Snax Playing BGMI New Update After Long Time!",
           "thumbnail": "https://i.ytimg.com/vi/Kki1hOLPzYU/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=Kki1hOLPzYU",
           "date": "1 week ago",
-          "views": "332K views"
+          "views": "333K views"
         },
         {
           "title": "GodL Comeback Chicken In PMWC?😱 SNAX Reaction🥹",
@@ -111,36 +111,43 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2640000,
       "subs_formatted": "2.64M+",
-      "views_raw": 807897652,
-      "views_formatted": "807.90M+",
+      "views_raw": 808534948,
+      "views_formatted": "808.53M+",
       "videos": [
+        {
+          "title": "BGMI LIVE CONQUEROR LOBBY + HOK LATER !insta",
+          "thumbnail": "https://i.ytimg.com/vi/cOrvi-aItM8/hqdefault_live.jpg",
+          "url": "https://www.youtube.com/watch?v=cOrvi-aItM8",
+          "date": "2 hours ago",
+          "views": "0 views"
+        },
         {
           "title": "7 WWCD CHALLENGE BGMI LIVE !insta",
           "thumbnail": "https://i.ytimg.com/vi/yo2BxtMRitg/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=yo2BxtMRitg",
           "date": "1 day ago",
-          "views": "372K views"
+          "views": "374K views"
         },
         {
           "title": "BGMI NEW MODE IS HERE - IND SNAX GAMEPLAY TODAY !insta",
           "thumbnail": "https://i.ytimg.com/vi/MfFfWxpAeFg/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=MfFfWxpAeFg",
           "date": "2 days ago",
-          "views": "422K views"
+          "views": "423K views"
         },
         {
           "title": "Recreating 3 idiot movie scene😜",
           "thumbnail": "https://i.ytimg.com/vi/ek8pJ0VodUM/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=ek8pJ0VodUM",
           "date": "2 days ago",
-          "views": "50K views"
+          "views": "53K views"
         },
         {
           "title": "Raat Nahi, Din Ko😂",
           "thumbnail": "https://i.ytimg.com/vi/ADphy6GAYBc/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=ADphy6GAYBc",
           "date": "3 days ago",
-          "views": "49K views"
+          "views": "50K views"
         },
         {
           "title": "50,000 UC CRATE OPENING BGMI LIVE !insta",
@@ -148,13 +155,6 @@
           "url": "https://www.youtube.com/watch?v=bDRgvm8tjt4",
           "date": "4 days ago",
           "views": "426K views"
-        },
-        {
-          "title": "Age is just a number",
-          "thumbnail": "https://i.ytimg.com/vi/PpxI8bIN-SM/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=PpxI8bIN-SM",
-          "date": "6 days ago",
-          "views": "2.2M views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.64M+",
-    "views_formatted": "807.90M+",
+    "views_formatted": "808.53M+",
     "subs_raw": 2640000,
-    "views_raw": 807897652,
+    "views_raw": 808534948,
     "kick_followers_raw": 10700
   }
 }
