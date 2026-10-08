@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-10-08T15:45:13.912Z",
-  "fetched_at_ist": "8/10/2026, 9:15:13 pm",
+  "fetched_at": "2026-10-08T20:00:22.383Z",
+  "fetched_at_ist": "9/10/2026, 1:30:22 am",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
@@ -67,14 +67,14 @@
           "thumbnail": "https://i.ytimg.com/vi/ViS9YzXucaI/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=ViS9YzXucaI",
           "date": "6 days ago",
-          "views": "228K views"
+          "views": "230K views"
         },
         {
           "title": "Snax Playing BGMI New Update After Long Time!",
           "thumbnail": "https://i.ytimg.com/vi/Kki1hOLPzYU/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=Kki1hOLPzYU",
           "date": "1 week ago",
-          "views": "351K views"
+          "views": "352K views"
         },
         {
           "title": "GodL Comeback Chicken In PMWC?😱 SNAX Reaction🥹",
@@ -111,15 +111,22 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2640000,
       "subs_formatted": "2.64M+",
-      "views_raw": 810906659,
-      "views_formatted": "810.91M+",
+      "views_raw": 811261826,
+      "views_formatted": "811.26M+",
       "videos": [
+        {
+          "title": "BMSD 2026 | Semi-Finals | Day 2 - WATCHPARTY WITH SNAX",
+          "thumbnail": "https://i.ytimg.com/vi/2mi4s8rWjS8/hqdefault_live.jpg",
+          "url": "https://www.youtube.com/watch?v=2mi4s8rWjS8",
+          "date": "45 minutes ago",
+          "views": "0 views"
+        },
         {
           "title": "PLAYING HOK FOR THE FIRST TIME - !insta",
           "thumbnail": "https://i.ytimg.com/vi/cOrvi-aItM8/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=cOrvi-aItM8",
           "date": "5 days ago",
-          "views": "353K views"
+          "views": "354K views"
         },
         {
           "title": "7 WWCD CHALLENGE BGMI LIVE !insta",
@@ -133,7 +140,7 @@
           "thumbnail": "https://i.ytimg.com/vi/MfFfWxpAeFg/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=MfFfWxpAeFg",
           "date": "1 week ago",
-          "views": "425K views"
+          "views": "426K views"
         },
         {
           "title": "Recreating 3 idiot movie scene😜",
@@ -148,13 +155,6 @@
           "url": "https://www.youtube.com/watch?v=ADphy6GAYBc",
           "date": "1 week ago",
           "views": "57K views"
-        },
-        {
-          "title": "50,000 UC CRATE OPENING BGMI LIVE !insta",
-          "thumbnail": "https://i.ytimg.com/vi/bDRgvm8tjt4/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=bDRgvm8tjt4",
-          "date": "1 week ago",
-          "views": "432K views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.64M+",
-    "views_formatted": "810.91M+",
+    "views_formatted": "811.26M+",
     "subs_raw": 2640000,
-    "views_raw": 810906659,
+    "views_raw": 811261826,
     "kick_followers_raw": 10700
   }
 }
