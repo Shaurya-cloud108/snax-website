@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-11-12T21:30:00.861Z",
-  "fetched_at_ist": "13/11/2026, 3:00:00 am",
+  "fetched_at": "2026-11-13T09:47:20.792Z",
+  "fetched_at_ist": "13/11/2026, 3:17:20 pm",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 77800,
       "subs_formatted": "78K+",
-      "views_raw": 2720983,
+      "views_raw": 2721821,
       "views_formatted": "2.72M+",
       "videos": [
         {
@@ -59,15 +59,15 @@
       "avatar": "https://yt3.ggpht.com/Z9i0DBBvu-nDgnM1VmzkmSOl92EgJ0oQ3NCFJhxm-wLxo6M3CfbDIKO9bt-CBRM4tVwTGIg81w=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 282000,
       "subs_formatted": "282K+",
-      "views_raw": 122767052,
-      "views_formatted": "122.77M+",
+      "views_raw": 122802078,
+      "views_formatted": "122.80M+",
       "videos": [
         {
           "title": "Snax Reaction On Top Moments Of BMIC 2026😱",
           "thumbnail": "https://i.ytimg.com/vi/XkaBDaGnjOU/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=XkaBDaGnjOU",
           "date": "1 week ago",
-          "views": "220K views"
+          "views": "221K views"
         },
         {
           "title": "GDR💔 Snax Sad🥺 NSR Champions🇰🇷🏆",
@@ -95,7 +95,7 @@
           "thumbnail": "https://i.ytimg.com/vi/Ycnea6oBcuc/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=Ycnea6oBcuc",
           "date": "2 weeks ago",
-          "views": "364K views"
+          "views": "365K views"
         },
         {
           "title": "Snax Reaction On Top Moments Of PMGO Season 2😱",
@@ -111,35 +111,35 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2700000,
       "subs_formatted": "2.70M+",
-      "views_raw": 903892065,
-      "views_formatted": "903.89M+",
+      "views_raw": 904661061,
+      "views_formatted": "904.66M+",
       "videos": [
         {
           "title": "Wait For The End😂",
           "thumbnail": "https://i.ytimg.com/vi/rDFRvpTjXCM/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=rDFRvpTjXCM",
-          "date": "1 day ago",
-          "views": "269K views"
+          "date": "2 days ago",
+          "views": "284K views"
         },
         {
           "title": "This Bond🧿",
           "thumbnail": "https://i.ytimg.com/vi/movkfi9SZ98/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=movkfi9SZ98",
-          "date": "2 days ago",
-          "views": "530K views"
+          "date": "3 days ago",
+          "views": "551K views"
         },
         {
           "title": "F1®️ Sim Racing India Open LIVE | Watch Party | India’s Fastest Sim Racers",
           "thumbnail": "https://i.ytimg.com/vi/_GD1Cc4KeeE/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=_GD1Cc4KeeE",
           "date": "3 days ago",
-          "views": "438K views"
+          "views": "439K views"
         },
         {
           "title": "CELEBRATING DIWALI WITH FAMILY - VLOG 169",
           "thumbnail": "https://i.ytimg.com/vi/cgqFroRpUIU/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=cgqFroRpUIU",
-          "date": "3 days ago",
+          "date": "4 days ago",
           "views": "1.5M views"
         },
         {
@@ -154,7 +154,7 @@
           "thumbnail": "https://i.ytimg.com/vi/XkEOhtZXqQ4/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=XkEOhtZXqQ4",
           "date": "6 days ago",
-          "views": "494K views"
+          "views": "495K views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.70M+",
-    "views_formatted": "903.89M+",
+    "views_formatted": "904.66M+",
     "subs_raw": 2700000,
-    "views_raw": 903892065,
+    "views_raw": 904661061,
     "kick_followers_raw": 10700
   }
 }
