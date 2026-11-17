@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-11-17T10:53:28.312Z",
-  "fetched_at_ist": "17/11/2026, 4:23:28 pm",
+  "fetched_at": "2026-11-17T17:43:53.545Z",
+  "fetched_at_ist": "17/11/2026, 11:13:53 pm",
   "channels": {
     "maxx": {
       "handle": "@SnaxMaxx",
       "avatar": "https://yt3.ggpht.com/zFoQMwW0L-OKKgae6bj05GsJu2z7dFlqC1UVkEDm3dLfrthgAwem0YeXS1pqF1G-IQX-pAo4wx0=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 77800,
       "subs_formatted": "78K+",
-      "views_raw": 2725934,
+      "views_raw": 2726585,
       "views_formatted": "2.73M+",
       "videos": [
         {
@@ -22,7 +22,7 @@
           "thumbnail": "https://i.ytimg.com/vi/TAI3W6KjETk/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=TAI3W6KjETk",
           "date": "7 months ago",
-          "views": "355K views"
+          "views": "356K views"
         },
         {
           "title": "TRAINING CHEST & BACK WITH MY TRAINER",
@@ -59,8 +59,8 @@
       "avatar": "https://yt3.ggpht.com/Z9i0DBBvu-nDgnM1VmzkmSOl92EgJ0oQ3NCFJhxm-wLxo6M3CfbDIKO9bt-CBRM4tVwTGIg81w=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 282000,
       "subs_formatted": "282K+",
-      "views_raw": 122985804,
-      "views_formatted": "122.99M+",
+      "views_raw": 123004997,
+      "views_formatted": "123M+",
       "videos": [
         {
           "title": "Snax Reaction On Top Moments Of BMIC 2026😱",
@@ -111,22 +111,29 @@
       "avatar": "https://yt3.ggpht.com/SF6gtLA16ykecLQ-bEgYReAlazH0giurl5zfQyBMAClMofvSEE7IiKSdbFNDf40EcNYzKwPjfA=s800-c-k-c0x00ffffff-no-rj",
       "subs_raw": 2700000,
       "subs_formatted": "2.70M+",
-      "views_raw": 908919626,
-      "views_formatted": "908.92M+",
+      "views_raw": 909401553,
+      "views_formatted": "909.40M+",
       "videos": [
+        {
+          "title": "GTA 6 DAY 1:THE VICE CITY TAKEOVER",
+          "thumbnail": "https://i.ytimg.com/vi/r2QOiY4PK_0/hqdefault.jpg?v=6afc6111",
+          "url": "https://www.youtube.com/watch?v=r2QOiY4PK_0",
+          "date": "3 hours ago",
+          "views": "0 views"
+        },
         {
           "title": "Wait For The End😂",
           "thumbnail": "https://i.ytimg.com/vi/rDFRvpTjXCM/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=rDFRvpTjXCM",
           "date": "6 days ago",
-          "views": "367K views"
+          "views": "375K views"
         },
         {
           "title": "This Bond🧿",
           "thumbnail": "https://i.ytimg.com/vi/movkfi9SZ98/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=movkfi9SZ98",
           "date": "1 week ago",
-          "views": "693K views"
+          "views": "699K views"
         },
         {
           "title": "F1®️ Sim Racing India Open LIVE | Watch Party | India’s Fastest Sim Racers",
@@ -147,14 +154,7 @@
           "thumbnail": "https://i.ytimg.com/vi/ZPbxa7T740E/hqdefault.jpg",
           "url": "https://www.youtube.com/watch?v=ZPbxa7T740E",
           "date": "1 week ago",
-          "views": "325K views"
-        },
-        {
-          "title": "F1®️ Sim Racing India Open LIVE | Watch Party | India’s Fastest Sim Racers",
-          "thumbnail": "https://i.ytimg.com/vi/XkEOhtZXqQ4/hqdefault.jpg",
-          "url": "https://www.youtube.com/watch?v=XkEOhtZXqQ4",
-          "date": "1 week ago",
-          "views": "1.1M views"
+          "views": "326K views"
         }
       ]
     },
@@ -166,9 +166,9 @@
   },
   "home_stats": {
     "subs_formatted": "2.70M+",
-    "views_formatted": "908.92M+",
+    "views_formatted": "909.40M+",
     "subs_raw": 2700000,
-    "views_raw": 908919626,
+    "views_raw": 909401553,
     "kick_followers_raw": 10700
   }
 }
